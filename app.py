@@ -7,7 +7,7 @@ pytrends = TrendReq(hl='ko-KR', tz=360)
 
 # 구글 트렌드에서 현재 인기 검색어 상위 10개 가져오기
 def get_trending_searches():
-    trending_searches_df = pytrends.trending_searches(pn='united_states')
+    trending_searches_df = pytrends.trending_searches(pn='south_korea')
     return trending_searches_df.head(10)
 
 # Streamlit 앱 구성
