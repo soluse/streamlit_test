@@ -13,7 +13,7 @@ openai_api_key = st.text_input("Enter your OpenAI API key")
 client = OpenAI(api_key=openai_api_key)
 
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-4o-mini"
+    st.session_state["openai_model"] = "gpt-4o"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
